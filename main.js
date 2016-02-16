@@ -19,6 +19,6 @@ module.exports = {
       resultTaxes += 2.2;
       resultTaxes += (toBeTaxed-30) * 0.03;
     }
-    return resultTaxes;
+    return parseFloat(resultTaxes.toFixed(2));
   }
 }
