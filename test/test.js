@@ -13,11 +13,11 @@ describe('Tax Calculator', function(){
   });
 
   it('should tax 5% on the third $10', function(){
-    expect(code.calcTax(30).to.equal(0.50));
+    expect(code.calcTax(30)).to.equal(2.20);
   });
 
   it('should tax 3% everything after the base $30', function(){
-    expect(code.calcTax(50).to.equal(2000));
+    expect(code.calcTax(50)).to.equal(2.8);
   });
 
 });
